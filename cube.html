@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Jonathan Pazmino (jxpazmino)">
+    <title>Red Die</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- SVG sprite start -->
+    <svg style="display:none">
+        <symbol id="svgcube">
+            <g>
+                <rect x="2" y="2" fill="#BF1807" width="196" height="196" />
+                <path fill="#CD5C5C" d="M196,4v192H4V4H196 M200,0H0v200h200V0L200,0z" />
+            </g>
+            <circle cx="99.927" cy="99.969" r="21.5" />
+            <g>
+                <rect x="202" y="2" fill="#BF1807" width="196" height="196" />
+                <path fill="#CD5C5C" d="M396,4v192H204V4H396 M400,0H200v200h200V0L400,0z" />
+            </g>
+            <circle cx="357.26" cy="155.302" r="21.5" />
+            <circle cx="244.927" cy="43.302" r="21.5" />
+            <g>
+                <rect x="402" y="2" fill="#BF1807" width="196" height="196" />
+                <path fill="#CD5C5C" d="M596,4v192H404V4H596 M600,0H400v200h200V0L600,0z" />
+            </g>
+            <circle cx="557.26" cy="155.302" r="21.5" />
+            <circle cx="499.927" cy="99.969" r="21.5" />
+            <circle cx="444.927" cy="43.302" r="21.5" />
+            <g>
+                <rect x="2" y="202" fill="#BF1807" width="196" height="196" />
+                <path fill="#CD5C5C" d="M196,204v192H4V204H196 M200,200H0v200h200V200L200,200z" />
+            </g>
+            <circle cx="157.26" cy="355.303" r="21.5" />
+            <circle cx="44.927" cy="355.303" r="21.5" />
+            <circle cx="157.26" cy="243.303" r="21.5" />
+            <circle cx="44.927" cy="243.303" r="21.5" />
+            <g>
+                <rect x="202" y="202" fill="#BF1807" width="196" height="196" />
+                <path fill="#CD5C5C" d="M396,204v192H204V204H396 M400,200H200v200h200V200L400,200z" />
+            </g>
+            <circle cx="357.26" cy="355.303" r="21.5" />
+            <circle cx="244.927" cy="355.303" r="21.5" />
+            <circle cx="299.927" cy="299.969" r="21.5" />
+            <circle cx="357.26" cy="243.303" r="21.5" />
+            <circle cx="244.927" cy="243.303" r="21.5" />
+            <g>
+                <rect x="402" y="202" fill="#BF1807" width="196" height="196" />
+                <path fill="#CD5C5C" d="M596,204v192H404V204H596 M600,200H400v200h200V200L600,200z" />
+            </g>
+            <circle cx="557.26" cy="355.303" r="21.5" />
+            <circle cx="444.927" cy="355.303" r="21.5" />
+            <circle cx="557.26" cy="299.969" r="21.5" />
+            <circle cx="444.927" cy="299.969" r="21.5" />
+            <circle cx="557.26" cy="243.303" r="21.5" />
+            <circle cx="444.927" cy="243.303" r="21.5" />
+        </symbol>
+    </svg>
+    <!-- SVG sprite end -->
+
+    <div id="instructions"><strong>Touch</strong> the die or hit <strong>R</strong> in your keyboard to roll</div>
+
+    <div id="container">
+        <div id="viewport">
+            <div id="cube">
+                <!-- 1 -->
+                <div id="front">
+                    <svg class="svgcube" viewbox="0 0 200 200" width="200">
+                        <use xlink:href="#svgcube"></use>
+                    </svg>
+                </div>
+                <!-- 2 -->
+                <div id="right">
+                    <svg class="svgcube" viewbox="200 0 400 200" width="400">
+                        <use xlink:href="#svgcube"></use>
+                    </svg>
+                </div>
+                <!-- 3 -->
+                <div id="top">
+                    <svg class="svgcube" viewbox="400 0 600 200" width="600">
+                        <use xlink:href="#svgcube"></use>
+                    </svg>
+                </div>
+                <!-- 4 -->
+                <div id="bottom">
+                    <svg class="svgcube" viewbox="0 200 200 400" width="200">
+                        <use xlink:href="#svgcube"></use>
+                    </svg>
+                </div>
+                <!-- 5 -->
+                <div id="left">
+                    <svg class="svgcube" viewbox="200 200 400 400" width="400">
+                        <use xlink:href="#svgcube"></use>
+                    </svg>
+                </div>
+                <!-- 6 -->
+                <div id="back">
+                    <svg class="svgcube" viewbox="400 200 600 400" width="600">
+                        <use xlink:href="#svgcube"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
