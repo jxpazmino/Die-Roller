@@ -53,6 +53,7 @@ strong {
   height: 100%;
   position: relative;
   margin: 0 auto;
+  cursor: pointer;
   /*Avoid cube flicker on load*/
   opacity: 0;
 }
